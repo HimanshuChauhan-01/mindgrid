@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MindGrid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body class="popup-page">
+    <main class="popup-shell">
+      <header class="popup-brand">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>mindgrid</span>
+        <span class="privacy-chip"><span></span> Private</span>
+      </header>
+      <p class="eyebrow" id="popup-date"></p>
+      <h1>Your digital day</h1>
+      <div class="popup-total">
+        <span class="popup-total-value" id="popup-total">0m</span>
+        <span class="muted">tracked today</span>
+      </div>
+      <div class="popup-divider"></div>
+      <div class="popup-list-heading"><span>Top platforms</span><span id="popup-count">0 visited</span></div>
+      <div id="popup-platforms" class="popup-platforms"></div>
+      <p id="popup-empty" class="popup-empty" hidden>Your browsing time will show up here as you explore.</p>
+      <button id="open-dashboard" class="button button-primary popup-cta">Open full dashboard <span aria-hidden="true">↗</span></button>
+      <p class="popup-footnote">Active browsing time · Stored on this device</p>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

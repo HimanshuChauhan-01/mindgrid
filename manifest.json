@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "MindGrid — Digital Wellbeing",
+  "version": "1.0.0",
+  "description": "Understand your browsing habits with private, platform-wise screen-time reports.",
+  "permissions": [
+    "alarms",
+    "idle",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open MindGrid",
+    "default_popup": "popup.html"
+  },
+  "options_page": "dashboard.html"
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8f4">
+    <title>MindGrid — Your digital wellbeing</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="dashboard-page">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="dashboard.html" aria-label="MindGrid home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>mindgrid</span>
+        </a>
+        <div class="nav-label">YOUR SPACE</div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-link is-active" data-view="overview"><span class="nav-icon">◫</span> Overview</button>
+          <button class="nav-link" data-view="platforms"><span class="nav-icon">▤</span> Platforms</button>
+          <button class="nav-link" data-view="insights"><span class="nav-icon">✳</span> Insights</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="privacy-card">
+            <span class="privacy-icon">◈</span>
+            <div><strong>Your data stays yours</strong><span>Saved only on this device.</span></div>
+          </div>
+          <button class="nav-link settings-link" data-view="settings"><span class="nav-icon">⚙</span> Settings</button>
+          <div class="sidebar-version">MINDGRID <span>·</span> 1.0</div>
+        </div>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <div class="mobile-brand">
+            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span>mindgrid</span>
+          </div>
+          <div class="topbar-note"><span class="status-dot"></span> Tracking active browsing</div>
+          <button class="button button-soft export-top" id="export-button">↓ <span>Export data</span></button>
+        </header>
+        <div id="view-root" class="view-root" aria-live="polite"></div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="dashboard.js"></script>
+  </body>
+</html>
